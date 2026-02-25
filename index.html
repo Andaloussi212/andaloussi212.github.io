@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Andalussi — Portfolio (BUT Informatique)</title>
+    <meta
+      name="description"
+      content="Portfolio de Zayd Benzakour (Andalussi), étudiant en BUT Informatique à Nancy : Java, SQL/PLSQL (Oracle), Linux. GitHub, LinkedIn, contact."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#0b0f19" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Andalussi — Portfolio" />
+    <meta
+      property="og:description"
+      content="Java • SQL/PLSQL (Oracle) • Linux — Étudiant BUT Informatique à Nancy."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Accueil">
+          <span class="brand-mark" aria-hidden="true">◆</span>
+          <span class="brand-name">Andalussi</span>
+        </a>
+
+        <nav class="nav" aria-label="Navigation principale">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+          >
+            <span class="sr-only">Ouvrir le menu</span>
+            <span aria-hidden="true">☰</span>
+          </button>
+
+          <ul id="nav-menu" class="nav-menu">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Labs</a></li>
+            <li><a href="#education">Parcours</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="nav-actions">
+              <button class="theme-toggle" type="button">
+                <span class="sr-only">Changer de thème</span>
+                <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main id="main">
+      <!-- Hero -->
+      <section id="top" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <p class="pill">
+              <span class="dot" aria-hidden="true"></span>
+              Étudiant BUT Informatique — Nancy
+            </p>
+
+            <h1>
+              Zayd Benzakour <span class="accent">(Andalussi)</span><br />
+              Java • SQL • Linux
+            </h1>
+
+            <p class="lead">
+              Étudiant en BUT Informatique à Nancy. Je mets l’accent sur
+              <strong>Java</strong>, <strong>SQL</strong> (Oracle / PL/SQL) et
+              <strong>Linux</strong>. Je travaille principalement avec
+              <strong>VS Code</strong> et <strong>Oracle SQL Developer</strong>,
+              et je documente mes labs/TP de manière propre (README, structure,
+              scripts).
+            </p>
+
+            <div class="cta-row">
+              <a class="btn primary" href="#projects">Voir mes labs</a>
+              <a
+                class="btn ghost"
+                href="assets/CV.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Télécharger mon CV
+              </a>
+            </div>
+
+            <div class="hero-meta">
+              <div class="meta-item">
+                <span class="meta-label">Localisation</span>
+                <span class="meta-value">Nancy, France</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">GitHub</span>
+                <a
+                  class="meta-value link"
+                  href="https://github.com/Andaloussi212"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  github.com/Andaloussi212
+                </a>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">LinkedIn</span>
+                <a
+                  class="meta-value link"
+                  href="https://www.linkedin.com/in/zayd-benzakour"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  linkedin.com/in/zayd-benzakour
+                </a>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Email</span>
+                <a
+                  class="meta-value link"
+                  href="mailto:zayd.benz.pro@proton.me"
+                >
+                  zayd.benz.pro@proton.me
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="Résumé rapide">
+            <div class="card">
+              <h2 class="card-title">Résumé</h2>
+              <ul class="checklist">
+                <li><strong>Java</strong> (POO, structuration, UML)</li>
+                <li>
+                  <strong>SQL</strong> + <strong>PL/SQL</strong> (Oracle,
+                  scripts)
+                </li>
+                <li><strong>Linux</strong> (Fedora/Arch), shell, workflow</li>
+                <li>
+                  Outils : <strong>VS Code</strong>,
+                  <strong>SQL Developer</strong>, Git/GitHub
+                </li>
+              </ul>
+
+              <div class="card-actions">
+                <a class="btn small" href="#contact">Me contacter</a>
+                <a class="btn small ghost" href="#about">En savoir plus</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>À propos</h2>
+            <p>
+              Profil orienté rigueur : code lisible, structure claire,
+              documentation utile, et bonnes pratiques de travail.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <div class="card">
+              <h3>Objectif</h3>
+              <p>
+                À terme (S4), je viserai un stage/alternance orienté
+                <strong>développement Java</strong>,
+                <strong>bases de données SQL</strong> et/ou
+                <strong>systèmes Linux</strong>. Pour l’instant, je consolide
+                mes acquis via les SAE/TP et des labs personnels (scripts, docs,
+                entraînements SQL).
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Ma manière de travailler</h3>
+              <ul class="bullets">
+                <li>Code maintenable (noms clairs, modules simples)</li>
+                <li>Documentation (README, étapes, scripts)</li>
+                <li>Focus sur la compréhension + propreté</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Currently learning</h3>
+              <ul class="tags">
+                <li>PL/SQL avancé</li>
+                <li>Optimisation SQL</li>
+                <li>Shell scripting</li>
+                <li>Docker (bases)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Compétences</h2>
+            <p>Structurées par domaines, avec un niveau indicatif.</p>
+          </div>
+
+          <div class="skills-grid">
+            <div class="card">
+              <h3>Développement</h3>
+              <div class="skill">
+                <span>Java (POO, UML)</span>
+                <div class="bar" data-level="88"></div>
+              </div>
+              <div class="skill">
+                <span>Python</span>
+                <div class="bar" data-level="55"></div>
+              </div>
+              <div class="skill">
+                <span>Web (HTML/CSS/JS)</span>
+                <div class="bar" data-level="45"></div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>Base de données</h3>
+              <div class="skill">
+                <span>SQL</span>
+                <div class="bar" data-level="82"></div>
+              </div>
+              <div class="skill">
+                <span>PL/SQL (Oracle)</span>
+                <div class="bar" data-level="72"></div>
+              </div>
+              <div class="skill">
+                <span>Modélisation (MLD / contraintes)</span>
+                <div class="bar" data-level="65"></div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>Systèmes & outils</h3>
+              <div class="skill">
+                <span>Linux (Fedora/Arch), shell</span>
+                <div class="bar" data-level="80"></div>
+              </div>
+              <div class="skill">
+                <span>Git / GitHub</span>
+                <div class="bar" data-level="75"></div>
+              </div>
+              <div class="skill">
+                <span>Virtualisation / environnements</span>
+                <div class="bar" data-level="55"></div>
+              </div>
+
+              <p class="muted" style="margin-top: 10px">
+                Outils : VS Code, Oracle SQL Developer, Git/GitHub, terminal
+                Linux.
+              </p>
+            </div>
+          </div>
+
+          <div class="note">
+            <p class="muted">
+              Tu peux ajuster les niveaux en fonction de tes labs (mieux vaut
+              réaliste que “100% partout”).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Labs -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Labs & Travaux</h2>
+            <p>
+              Ce que je construis et documente actuellement (TP, scripts,
+              entraînements SQL, setup Linux).
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project card">
+              <div class="project-top">
+                <h3>Java — POO & conception (TP / SAE)</h3>
+                <span class="badge">Java</span>
+              </div>
+              <p class="muted">
+                Travaux pratiques orientés POO : classes, héritage, interfaces,
+                structuration et documentation.
+              </p>
+              <ul class="bullets">
+                <li>Organisation claire (packages, conventions, lisibilité)</li>
+                <li>UML + documentation (README / Javadoc)</li>
+                <li>Exemples d’exécution + cas limites</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  class="link"
+                  href="https://github.com/Andaloussi212"
+                  target="_blank"
+                  rel="noreferrer"
+                  >GitHub</a
+                >
+                <a class="link" href="#" target="_blank" rel="noreferrer"
+                  >Repo Java (à créer)</a
+                >
+              </div>
+            </article>
+
+            <article class="project card">
+              <div class="project-top">
+                <h3>Oracle — SQL & PL/SQL (SQL Developer)</h3>
+                <span class="badge">SQL / PL-SQL</span>
+              </div>
+              <p class="muted">
+                Entraînement Oracle : schémas, contraintes, requêtes,
+                procédures, triggers (selon niveau).
+              </p>
+              <ul class="bullets">
+                <li>Scripts réutilisables + dataset d’entraînement</li>
+                <li>Gestion d’erreurs + validations</li>
+                <li>Documentation “comment lancer / tester”</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  class="link"
+                  href="https://github.com/Andaloussi212"
+                  target="_blank"
+                  rel="noreferrer"
+                  >GitHub</a
+                >
+                <a class="link" href="#" target="_blank" rel="noreferrer"
+                  >Repo Oracle (à créer)</a
+                >
+              </div>
+            </article>
+
+            <article class="project card">
+              <div class="project-top">
+                <h3>Linux — workflow & scripts (Fedora / Arch)</h3>
+                <span class="badge">Linux</span>
+              </div>
+              <p class="muted">
+                Setup et automatisations : alias, scripts shell, dépannage,
+                bonnes pratiques pour être productif.
+              </p>
+              <ul class="bullets">
+                <li>Scripts : backup, setup, utilitaires</li>
+                <li>Notes de troubleshooting (réseau, SSH, paquets)</li>
+                <li>Organisation claire + README</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  class="link"
+                  href="https://github.com/Andaloussi212"
+                  target="_blank"
+                  rel="noreferrer"
+                  >GitHub</a
+                >
+                <a class="link" href="#" target="_blank" rel="noreferrer"
+                  >Repo dotfiles (optionnel)</a
+                >
+              </div>
+            </article>
+
+            <article class="project card">
+              <div class="project-top">
+                <h3>Tooling — VS Code & qualité</h3>
+                <span class="badge">Workflow</span>
+              </div>
+              <p class="muted">
+                Organisation et qualité : structure des dossiers, conventions,
+                docs, et utilisation efficace de VS Code.
+              </p>
+              <ul class="bullets">
+                <li>Templates README + checklists</li>
+                <li>Snippets / settings utiles</li>
+                <li>Organisation “pro” des livrables</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  class="link"
+                  href="https://github.com/Andaloussi212"
+                  target="_blank"
+                  rel="noreferrer"
+                  >GitHub</a
+                >
+                <a class="link" href="#" target="_blank" rel="noreferrer"
+                  >Repo “tooling” (à créer)</a
+                >
+              </div>
+            </article>
+          </div>
+
+          <div class="center">
+            <a
+              class="btn ghost"
+              href="https://github.com/Andaloussi212"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Voir mes repos GitHub →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Parcours</h2>
+            <p>Simple, lisible, orienté compétences.</p>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item card">
+              <div class="timeline-top">
+                <h3>BUT Informatique — en cours</h3>
+                <span class="badge">Nancy</span>
+              </div>
+              <p class="muted">
+                Développement (Java), bases de données (Oracle), systèmes
+                (Linux), projets encadrés (SAE).
+              </p>
+              <ul class="bullets">
+                <li>POO Java + modélisation UML</li>
+                <li>SQL / PL-SQL avec Oracle SQL Developer</li>
+                <li>Linux + outils : Git, shell, workflow</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Contact</h2>
+            <p>
+              Email + liens. Le formulaire ouvre ton client mail (site 100%
+              statique).
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="card">
+              <h3>Me joindre</h3>
+              <ul class="contact-list">
+                <li>
+                  <span class="muted">Email</span>
+                  <a class="link" href="mailto:zayd.benz.pro@proton.me"
+                    >zayd.benz.pro@proton.me</a
+                  >
+                </li>
+                <li>
+                  <span class="muted">LinkedIn</span>
+                  <a
+                    class="link"
+                    href="https://www.linkedin.com/in/zayd-benzakour"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    linkedin.com/in/zayd-benzakour
+                  </a>
+                </li>
+                <li>
+                  <span class="muted">GitHub</span>
+                  <a
+                    class="link"
+                    href="https://github.com/Andaloussi212"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    github.com/Andaloussi212
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <form class="card contact-form" id="contactForm" novalidate>
+              <h3>Envoyer un message</h3>
+
+              <label>
+                <span>Nom</span>
+                <input
+                  name="name"
+                  type="text"
+                  placeholder="Votre nom"
+                  autocomplete="name"
+                  required
+                />
+              </label>
+
+              <label>
+                <span>Email</span>
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="votre@email.com"
+                  autocomplete="email"
+                  required
+                />
+              </label>
+
+              <label>
+                <span>Message</span>
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Bonjour, je vous contacte pour…"
+                  required
+                ></textarea>
+              </label>
+
+              <button class="btn primary" type="submit">
+                Ouvrir mon client mail →
+              </button>
+
+              <p class="muted tiny">
+                Le message sera préparé dans ton application mail (aucune donnée
+                envoyée sur un serveur).
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="muted">© <span id="year"></span> Andalussi — Portfolio.</p>
+        <a class="link" href="#top">Retour en haut ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
